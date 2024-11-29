@@ -17,15 +17,15 @@
       </div>
       <h2>Login</h2>
       <p>Login to access your travelwise account</p>
-      <form>
+      <form action="/login" method="POST">
         <div class="input-group">
           <label for="username">Username</label>
-          <input type="text" id="username" placeholder="">
+          <input type="text" id="username" name="username" placeholder="">
         </div>
         <div class="input-group">
           <label for="password">Password</label>
           <div class="password-field">
-            <input type="password" id="password" placeholder="********">
+            <input type="password" id="password" name="password" placeholder="********">
             <img src="Image/eye-slash-fill.svg" alt="Toggle password visibility" class="toggle-password">
           </div>
         </div>
@@ -38,11 +38,11 @@
         <button type="submit" class="login-btn">Login</button>
       </form>
       <p class="signup-link">
-        Don’t have an account? <a href="#">Sign up</a>
+        Don’t have an account? <a href="/signup">Sign up</a>
       </p>
     </div>
     <div class="illustration">
-      <img src="Image/login.jpg" alt="Secure login illustration">
+      <img src="website/Image/login.jpg" alt="Secure login illustration">
     </div>
   </div>
 </body>
